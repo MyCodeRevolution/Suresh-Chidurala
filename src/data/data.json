@@ -1,0 +1,163 @@
+[
+  {
+    "skills": [
+      "React.js",
+      "Redux",
+      "HTML",
+      "Material UI",
+      "SCSS",
+      "Node.js",
+      "Express.js",
+      "Mango DB",
+      "Firebase",
+      "JWT",
+      "C programming",
+      "Java",
+      "Figma",
+      "Photoshop",
+      "Ms Office"
+    ]
+  },
+  {
+    "interests": [
+      {
+        "icon": "ri-restaurant-fill",
+        "color": "#ffbb2c",
+        "name": "Cooking"
+      },
+      {
+        "icon": "ri-global-line",
+        "color": "#e80368",
+        "name": "Web Designing"
+      },
+      {
+        "icon": "ri-paint-brush-line",
+        "color": "#e361ff",
+        "name": "Photoshop"
+      },
+      {
+        "icon": "ri-mental-health-fill",
+        "color": "#11dbcf",
+        "name": "Yoga"
+      },
+      {
+        "icon": "ri-disc-line",
+        "color": "#b20969",
+        "name": "Music"
+      },
+      {
+        "icon": "ri-live-fill",
+        "color": "#d42020",
+        "name": "Youtube Streming"
+      }
+    ]
+  },
+  {
+    "education": [
+      {
+        "level": "Bachelor of Technology",
+        "year": "2021 - Ongoing",
+        "institution": "JNTU College of Engineering, Pulivendula",
+        "branch": "Computer Science and Engineering",
+        "Grade": "more to write"
+      },
+      {
+        "level": "Intermediate",
+        "year": "2015 - 2016",
+        "institution": "Sri Balaji junior college Hanamkonda",
+        "branch": "MPC",
+        "Grade": "969/1000"
+      },
+      {
+        "level": "Secondary Education",
+        "year": "2014",
+        "institution": "Pragathi Vidya Nilayam, Palakurthy",
+        "branch": "",
+        "Grade": "9.3/10"
+      }
+    ]
+  },
+  {
+    "pro_exp": [
+      {
+        "name": "training",
+        "points": [
+          "Conducted workshops on front-end web designing",
+          "Attended IOT workshops",
+          "Certified ethical hacker (CEH) summer training in HACKERSCHOOL Ameerpet",
+          "Machine Learning Certification from Coursera",
+          "Attended web designing with python workshop"
+        ]
+      },
+      {
+        "name": "Certifications",
+        "points": [
+          "Udacity front-end nano Degree Certification",
+          "Machine Learning Certification from Coursera",
+          "Joy of Computing Python Certification from Coursera"
+        ]
+      },
+      {
+        "name": "Projects",
+        "points": [
+          "memories-project using React.js, Node.js, Express.js, Mango DB, JWT, Material UI...",
+          "mario-plans project using React.js, Node.js, Express.js, Mango DB, JWT, Material UI, OAuth...",
+          "This Portfolio using React, Bootstrap"
+        ]
+      }
+    ]
+  },
+  {
+    "social_media": [
+      {
+        "link": "https://twitter.com/ChiduralaSurya?s=08",
+        "font": "icofont-twitter"
+      },
+      {
+        "link": "https://www.facebook.com/surya.chidurala",
+        "font": "icofont-facebook"
+      },
+      {
+        "link": "https://www.instagram.com/suryachidurala?r=nametag",
+        "font": "icofont-instagram"
+      },
+      {
+        "link": "https://www.linkedin.com/in/suresh-chidurala",
+        "font": "icofont-linkedin"
+      },
+      {
+        "link": "https://github.com/Suresh17511",
+        "font": "icofont-github"
+      },
+      {
+        "link": "mailto:suresh.chidurala17511@gmail.com",
+        "font": "icofont-envelope"
+      }
+    ]
+  },
+  {
+    "portfolio": [
+      {
+        "filter": "react",
+        "img": "assets/img/portfolio/portfolio-2.jpg",
+        "project_name": "memories-project",
+        "title": "memories-project",
+        "technology": "React.js"
+      },
+      {
+        "filter": "html",
+        "img": "assets/img/portfolio/portfolio-3.jpg",
+        "project_name": "mario-plans-project",
+        "title": "mario-plans",
+        "technology": "React.js"
+      },
+      {
+        "filter": "react",
+        "img": "assets/img/portfolio/portfolio-4.jpg",
+        "project_name": "sample-routing-project",
+        "title": "Routing",
+        "technology": "React.js"
+      }
+    ]
+  }
+]

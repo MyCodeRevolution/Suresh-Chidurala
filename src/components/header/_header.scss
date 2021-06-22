@@ -1,0 +1,71 @@
+@import '../../../public/assets/scss/mixins';
+@import '../../../public/assets/scss/variables';
+.header {
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  color: $white;
+  background-color: #222222;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  @include mQ(650px) {
+    height: 90px;
+  }
+  .icon {
+    position: relative;
+    top: -5px;
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+    background-color: $primary;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    h1 {
+      position: absolute;
+      top: 5px;
+      font-size: 35px;
+      font-weight: 900;
+      background-color: inherit;
+    }
+  }
+  .menu__bar {
+    position: absolute;
+    right: 40px;
+    color: #adadac;
+    li {
+      display: inline-block;
+      margin-left: 40px;
+      overflow: hidden;
+      position: relative;
+      padding: 0.2em 0;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%;
+        height: 0.1em;
+        background-color: $primary;
+        opacity: 1;
+        transition: opacity 300ms, transform 300ms;
+        transform: translate3d(-100%, 0, 0);
+      }
+      &:hover::after,
+      &:focus::after {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  .drawer {
+    position: absolute;
+    right: 10px;
+    .drawer_icon {
+      height: 30px;
+    }
+  }
+}
