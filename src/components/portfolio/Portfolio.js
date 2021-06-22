@@ -35,6 +35,7 @@ const Portfolio = () => {
           {portfolio_data.map((data) => (
             <div
               className={`col-lg-4 col-md-6 portfolio-item filter-${data.filter}`}
+              key={data.title}
             >
               <div className="portfolio-wrap">
                 <img src={data.img} className="img-fluid" alt="" />
@@ -50,9 +51,9 @@ const Portfolio = () => {
                     >
                       <i className="bx bx-plus"></i>
                     </a>
-                    <a onClick={() => setIsOpen(true)} title={data.title}>
+                    <button onClick={() => setIsOpen(true)} title={data.title}>
                       <i className="bx bx-link"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
