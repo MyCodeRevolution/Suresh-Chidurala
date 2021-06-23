@@ -9,6 +9,9 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="portfolio">
       <div className="container">
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          Fancy Modal
+        </Modal>
         <div className="section-title">
           <h2>Portfolio</h2>
           <p>My Works</p>
@@ -28,9 +31,7 @@ const Portfolio = () => {
             </ul>
           </div>
         </div> */}
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          Fancy Modal
-        </Modal>
+
         <div className="row portfolio-container">
           {portfolio_data.map((data) => (
             <div

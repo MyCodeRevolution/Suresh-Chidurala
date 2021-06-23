@@ -855,3 +855,58 @@ section {
     }
   }
 }
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.modal_container {
+  width: 80%;
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, 4%);
+  background-color: rgb(171, 156, 240);
+  z-index: 1000;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .slider__container {
+    width: 60%;
+    .slides img {
+      width: 100%;
+    }
+    .slides .slick-prev,
+    .slides .slick-next {
+      position: absolute;
+      top: 30%;
+      z-index: 1;
+    }
+
+    .slides {
+      position: relative;
+      // margin-bottom: -200px;
+      // z-index: -1;
+    }
+
+    .slides .slick-prev,
+    .slides .slick-next {
+      position: absolute;
+      top: 30%;
+      z-index: 1;
+    }
+
+    .slides .slick-prev {
+      left: 5%;
+    }
+
+    .slides .slick-next {
+      right: 5%;
+    }
+  }
+  .right__container {
+    width: 36%;
+  }
+}
