@@ -1011,6 +1011,13 @@ section .container {
   color: #54adff;
 }
 
+.portfolio .portfolio-wrap .portfolio-links button {
+  background: none;
+  border: none;
+  font-size: 2vw;
+  color: #fff;
+}
+
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
@@ -1318,11 +1325,11 @@ section .container {
 .modal_container {
   width: 80%;
   position: fixed;
-  top: 4%;
+  top: 2%;
   left: 50%;
   -webkit-transform: translate(-50%, 4%);
           transform: translate(-50%, 4%);
-  background-color: #ab9cf0;
+  background-color: #222222;
   z-index: 1000;
   border-radius: 15px;
   overflow: hidden;
@@ -1337,12 +1344,18 @@ section .container {
           justify-content: space-between;
 }
 
+.modal_container .header_container {
+  width: 100%;
+  padding: 10px 10px;
+}
+
 .modal_container .slider__container {
   width: 60%;
 }
 
 .modal_container .slider__container .slides img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .modal_container .slider__container .slides .slick-prev,
@@ -1359,7 +1372,7 @@ section .container {
 .modal_container .slider__container .slides .slick-prev,
 .modal_container .slider__container .slides .slick-next {
   position: absolute;
-  top: 30%;
+  top: 50%;
   z-index: 1;
 }
 
@@ -1372,7 +1385,71 @@ section .container {
 }
 
 .modal_container .right__container {
+  margin-right: 15px;
+  border: 2px solid #8b7c7c;
+  border-radius: 15px;
   width: 36%;
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_container .right__container .container {
+  margin: 15px;
+}
+
+.modal_container .right__container .container h5 {
+  font-weight: 700;
+}
+
+.modal_container .right__container .container .github_link,
+.modal_container .right__container .container .live_site_link {
+  margin: 5px 0px;
+  font-size: 0.85vw;
+}
+
+.modal_container .right__container .container .description {
+  margin: 10px 0px;
+}
+
+.modal_container .right__container .container .description li {
+  font-size: 1vw;
+  text-align: justify;
+}
+
+.modal_container .right__container .container .technology {
+  margin: 10px 0px;
+}
+
+.modal_container .right__container .container .technology h5 {
+  font-weight: 700;
+}
+
+.modal_container .right__container .container .technology .technology_used {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal_container .right__container .container .technology .technology_used span {
+  padding: 2px 10px;
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin: 5px;
+  background-color: #8b7c7c;
+  border-radius: 5px;
+}
+
+.modal_container .close__button {
+  color: #fff;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 
 /*--------------------------------------------------------------

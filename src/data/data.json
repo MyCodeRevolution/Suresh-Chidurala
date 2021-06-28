@@ -21,15 +21,11 @@
   {
     "interests": [
       {
-        "icon": "ri-restaurant-fill",
-        "color": "#ffbb2c",
-        "name": "Cooking"
-      },
-      {
         "icon": "ri-global-line",
         "color": "#e80368",
         "name": "Web Designing"
       },
+
       {
         "icon": "ri-paint-brush-line",
         "color": "#e361ff",
@@ -49,6 +45,11 @@
         "icon": "ri-live-fill",
         "color": "#d42020",
         "name": "Youtube Streming"
+      },
+      {
+        "icon": "ri-restaurant-fill",
+        "color": "#ffbb2c",
+        "name": "Cooking"
       }
     ]
   },
@@ -138,25 +139,152 @@
   {
     "portfolio": [
       {
-        "filter": "react",
-        "img": "assets/img/portfolio/portfolio-2.jpg",
+        "img": "assets/img/portfolio/memories-project.png",
         "project_name": "memories-project",
         "title": "memories-project",
-        "technology": "React.js"
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/memories-project",
+        "liveSite": "https://my-memories-s.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/memory-plans-01.png",
+          "assets/img/portfolio/memory-plans-02.png",
+          "assets/img/portfolio/memory-plans-03.png",
+          "assets/img/portfolio/memory-plans-04.png",
+          "assets/img/portfolio/memory-plans-05.png"
+        ],
+        "description": [
+          "Creating a person's memories based on Authentication.",
+          "Added the functionalities like create, update, delete, like the memory and seen by every person and liked by others.",
+          "user can see related post when he click on the memory details.",
+          "Based on the authentication user can create update or delete the memory that he have created."
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Material UI",
+          "Node",
+          "Express",
+          "Mango DB",
+          "JWT",
+          "OAuth"
+        ]
       },
       {
-        "filter": "html",
-        "img": "assets/img/portfolio/portfolio-3.jpg",
+        "img": "assets/img/portfolio/mario-plans.jpg",
         "project_name": "mario-plans-project",
         "title": "mario-plans",
-        "technology": "React.js"
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/mario-plans",
+        "liveSite": "https://mario-plans.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/mario-plans-01.png",
+          "assets/img/portfolio/mario-plans-02.png",
+          "assets/img/portfolio/mario-plans-03.png",
+          "assets/img/portfolio/mario-plans-04.png"
+        ],
+        "description": [
+          "User can create his own daily routine plans like setting up reminders, Money, todos, work. ",
+          "Each User has his own separate database , he can create and delete his plans.",
+          "It is Responsive Design "
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Material UI",
+          "Node",
+          "Express",
+          "JWT",
+          "OAuth"
+        ]
       },
       {
-        "filter": "react",
-        "img": "assets/img/portfolio/portfolio-4.jpg",
+        "img": "assets/img/portfolio/book-store-app.png",
+        "project_name": "my-book-store-app",
+        "title": "my-book-store-app",
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/my-book-store-app",
+        "liveSite": "https://book-store-application.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/book-store-01.png",
+          "assets/img/portfolio/book-store-02.png",
+          "assets/img/portfolio/book-store-03.png",
+          "assets/img/portfolio/book-store-04.png",
+          "assets/img/portfolio/book-store-05.png"
+        ],
+        "description": [
+          "It is a sample book store application with some books can be displayed from the back-end.",
+          "The features of this app are : Views like list and grid , and on the grid view when user click on the book a model can be pop-up showing details of the book.",
+          "User can fetch the books by search. and the dark feature can also available."
+        ],
+        "technologies": ["React", "SCSS", "Node", "Express"]
+      },
+      {
+        "img": "assets/img/portfolio/stock-currency.jpg",
+        "project_name": "stock-currency-app",
+        "title": "stock-currency-app",
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/stock-currency",
+        "liveSite": "https://stock-currency.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/stock-currency-01.png",
+          "assets/img/portfolio/stock-currency-02.png",
+          "assets/img/portfolio/stock-currency-03.png",
+          "assets/img/portfolio/stock-currency-04.png",
+          "assets/img/portfolio/stock-currency-05.png"
+        ],
+        "description": [
+          "This is a sample stock-currency application , the user can see stock-currency details fetch from the third party API.",
+          "The user can save the currency details and can see the saved currency details",
+          "And some other functionalities like fetch the details by search and pagination for the stock-currency items"
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Material UI",
+          "Scss",
+          "Node",
+          "Express"
+        ]
+      },
+      {
+        "img": "assets/img/portfolio/amazon-clone.jpg",
+        "project_name": "amazon-clone-app",
+        "title": "amazon-clone-app",
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/amazon-clone",
+        "liveSite": "https://surya-amazon-clone.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/amazon-clone-01.png",
+          "assets/img/portfolio/amazon-clone-02.png",
+          "assets/img/portfolio/amazon-clone-03.png",
+          "assets/img/portfolio/amazon-clone-04.png"
+        ],
+        "description": [
+          "It is just an UI interface Design that representing the Amazon",
+          "It is Responsive Design and No more functionalities in it"
+        ],
+        "technologies": ["React", "Material UI", "Scss"]
+      },
+
+      {
+        "img": "assets/img/portfolio/sample-routing.png",
         "project_name": "sample-routing-project",
         "title": "Routing",
-        "technology": "React.js"
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/react-routing",
+        "liveSite": "https://routing-test.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/sample-route-01.png",
+          "assets/img/portfolio/sample-route-02.png",
+          "assets/img/portfolio/sample-route-03.png",
+          "assets/img/portfolio/sample-route-04.png"
+        ],
+        "description": [
+          "It is just a sample routing app switching the pages ",
+          "And for the shop page fetch some data from the third party API and display the details of the each post with that id.",
+          "It is Responsive Design"
+        ],
+        "technologies": ["React", "HTML", "CSS"]
       }
     ]
   }

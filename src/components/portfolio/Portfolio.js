@@ -6,10 +6,22 @@ const portfolio_data = portfolioData[5].portfolio;
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModelData] = useState({
+    project_name: '',
+    github: '',
+    liveSite: '',
+    technologies: '',
+    description: '',
+    sliderImages: '',
+  });
   return (
     <div id="portfolio" className="portfolio">
       <div className="container">
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        <Modal
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          modalData={modalData}
+        >
           Fancy Modal
         </Modal>
         <div className="section-title">
@@ -35,11 +47,11 @@ const Portfolio = () => {
         <div className="row portfolio-container">
           {portfolio_data.map((data) => (
             <div
-              className={`col-lg-4 col-md-6 portfolio-item filter-${data.filter}`}
+              className={`col-lg-4 col-md-6 portfolio-item filter-react`}
               key={data.title}
             >
               <div className="portfolio-wrap">
-                <img src={data.img} className="img-fluid" alt="" />
+                <img src={data.img} className="img-fluid" alt={data.img} />
                 <div className="portfolio-info">
                   <h4>{data.project_name}</h4>
                   <p>{data.technology}</p>
@@ -52,7 +64,21 @@ const Portfolio = () => {
                     >
                       <i className="bx bx-plus"></i>
                     </a>
-                    <button onClick={() => setIsOpen(true)} title={data.title}>
+                    <button
+                      className="open_model"
+                      onClick={() => {
+                        setIsOpen(true);
+                        setModelData({
+                          project_name: data.project_name,
+                          github: data.github,
+                          liveSite: data.liveSite,
+                          technologies: data.technologies,
+                          description: data.description,
+                          sliderImages: data.sliderImages,
+                        });
+                      }}
+                      title={data.title}
+                    >
                       <i className="bx bx-link"></i>
                     </button>
                   </div>

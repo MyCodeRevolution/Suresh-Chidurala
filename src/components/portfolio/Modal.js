@@ -4,24 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const images = [
-  {
-    url: 'https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2020/X-site/Multititle/Aug/1500x600_Hero-Tall_np._CB404803728_.jpg',
-  },
-  {
-    url: 'https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/unrec1499/Under1499_Gw_3000x1200._CB661592357_.jpg" height="600px" width="1500px" data-a-hires="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/unrec1499/Under1499_Gw_3000x1200._CB661592357_.jpg',
-  },
-  {
-    url: 'https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Xiaomi/Redmi_EVOSeries/Note10Pro/GW/May/D21342631_WLD_Mi_Redmi_Note10Pro_tallhero_3000x1200._CB667000819_.jpg" height="600px" width="1500px" data-a-hires="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Xiaomi/Redmi_EVOSeries/Note10Pro/GW/May/D21342631_WLD_Mi_Redmi_Note10Pro_tallhero_3000x1200._CB667000819_.jpg',
-  },
-  {
-    url: 'https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/June_21/Pantry/01_2ND-JUN-pc2x._CB667157313_.jpg" height="600px" width="1500px" data-a-hires="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/June_21/Pantry/01_2ND-JUN-pc2x._CB667157313_.jpg',
-  },
-  {
-    url: 'https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Avatar/HeroPC_3000x1200_SVA._CB667240774_.jpg" height="600px" width="1500px" data-a-hires="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Avatar/HeroPC_3000x1200_SVA._CB667240774_.jpg',
-  },
-];
-
 // const MODAL_STYLES = {
 //   position: 'fixed',
 //   top: '50%',
@@ -42,7 +24,7 @@ const OVERLAY_STYLES = {
   zIndex: 1000,
 };
 
-export default function Modal({open, children, onClose}) {
+export default function Modal({open, children, onClose, modalData}) {
   const settings = {
     dots: false,
     fade: true,
@@ -55,32 +37,67 @@ export default function Modal({open, children, onClose}) {
     autoplaySpeed: 5000,
     className: 'slides',
   };
-
   if (!open) return null;
-
+  console.log(modalData);
   return ReactDom.createPortal(
     <>
       <div style={OVERLAY_STYLES}></div>
       <div className="modal_container">
+        <div className="header_container">
+          <h3>{modalData.project_name}</h3>
+        </div>
         <div className="slider__container">
           <Slider {...settings}>
-            {images.map((image) => {
+            {modalData.sliderImages.map((image) => {
               return (
                 <div key={image.url}>
                   <img
                     className="slider__image"
                     width="100%"
-                    src={image.url}
+                    src={image}
                     alt=""
                   />
                 </div>
               );
             })}
           </Slider>
-          <button onClick={onClose}>Close Modal</button>
+          <button onClick={onClose} className="close__button">
+            <i className="fas fa-times"></i>
+          </button>
         </div>
         <div className="right__container">
-          <h1>right slider</h1>
+          <div className="container">
+            <h5>Project info</h5>
+            <div className="github_link">
+              <i className="fab fa-github"></i>
+              <a href={`${modalData.github}`} target="_blank" rel="noreferrer">
+                &nbsp; &nbsp;{modalData.github}
+              </a>
+            </div>
+            <div className="live_site_link">
+              <i className="fas fa-link"></i>
+              <a
+                href={`${modalData.liveSite}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                &nbsp; &nbsp;{modalData.liveSite}
+              </a>
+            </div>
+            <div className="description">
+              {modalData.description.map((description) => (
+                <li>{description}</li>
+              ))}
+            </div>
+            <div className="technology">
+              <h5>Technology</h5>
+              <div className="technology_used">
+                {modalData.technologies.map((technologies) => (
+                  <span>{technologies}</span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>,
