@@ -4,16 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-// const MODAL_STYLES = {
-//   position: 'fixed',
-//   top: '50%',
-//   left: '50%',
-//   transform: 'translate(-50%, -50%)',
-//   backgroundColor: '#FFc',
-//   padding: '50px',
-//   zIndex: 1000,
-// };
-
 const OVERLAY_STYLES = {
   position: 'fixed',
   top: 0,
