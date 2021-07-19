@@ -49,6 +49,27 @@
     <!-- Template Main CSS File -->
     <link href="assets/scss/style.css" rel="stylesheet" />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
+      _smartsupp.key = "92398347c6c5a2f981431216a40d23b20257d582";
+      window.smartsupp ||
+        (function (d) {
+          var s,
+            c,
+            o = (smartsupp = function () {
+              o._.push(arguments);
+            });
+          o._ = [];
+          s = d.getElementsByTagName("script")[0];
+          c = d.createElement("script");
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.async = true;
+          c.src = "https://www.smartsuppchat.com/loader.js?";
+          s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -67,11 +88,11 @@
       <script src="assets/js/main.js"></script>
       <script>
         // Get the modal
-        var modal = document.getElementById('main');
+        var modal = document.getElementById("main");
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
           if (event.target == modal) {
-            modal.style.display = 'none';
+            modal.style.display = "none";
           }
         };
       </script>
