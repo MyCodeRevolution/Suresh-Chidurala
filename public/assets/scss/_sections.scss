@@ -1,8 +1,8 @@
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 section {
   overflow: hidden;
   position: absolute;
@@ -47,7 +47,7 @@ section {
   }
 
   h2::after {
-    content: '';
+    content: "";
     width: 120px;
     height: 1px;
     display: inline-block;
@@ -364,7 +364,7 @@ section {
   }
 
   .resume-item::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 16px;
     height: 16px;
@@ -406,7 +406,7 @@ section {
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         left: -8px;
         top: -8px;
         height: 100%;
@@ -514,7 +514,7 @@ section {
     $portfolio_wrap_spacing: 30px;
 
     &::before {
-      content: '';
+      content: "";
       background: rgba(#000, 0.6);
       position: absolute;
       left: $portfolio_wrap_spacing;
@@ -543,7 +543,7 @@ section {
 
       &::before {
         display: block;
-        content: '';
+        content: "";
         width: 48px;
         height: 48px;
         position: absolute;
@@ -557,7 +557,7 @@ section {
 
       &::after {
         display: block;
-        content: '';
+        content: "";
         width: 48px;
         height: 48px;
         position: absolute;
@@ -728,7 +728,7 @@ section {
       padding: 15px;
 
       &:before {
-        content: '';
+        content: "";
         display: inline-block;
         border-radius: 50%;
         width: 24px;
@@ -767,7 +767,7 @@ section {
       padding: 12px 15px;
     }
 
-    button[type='submit'] {
+    button[type="submit"] {
       background: $primary;
       border: 0;
       padding: 10px 30px;
@@ -885,6 +885,9 @@ section {
   }
   .slider__container {
     width: 60%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
     .slides img {
       width: 100%;
       border-radius: 15px;
@@ -924,6 +927,10 @@ section {
     width: 36%;
     background: #333333;
     display: flex;
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-right: 0px;
+    }
     .container {
       margin: 15px;
       h5 {
@@ -933,12 +940,18 @@ section {
       .live_site_link {
         margin: 5px 0px;
         font-size: 0.85vw;
+        @media (max-width: 992px) {
+          font-size: 3vw;
+        }
       }
       .description {
         margin: 10px 0px;
         li {
           font-size: 1vw;
           text-align: justify;
+          @media (max-width: 992px) {
+            font-size: 3vw;
+          }
         }
       }
       .technology {
@@ -956,6 +969,11 @@ section {
             margin: 5px;
             background-color: rgb(139, 124, 124);
             border-radius: 5px;
+            @media (max-width: 992px) {
+              font-size: 3vw;
+
+              margin: 1px;
+            }
           }
         }
       }

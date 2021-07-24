@@ -388,7 +388,7 @@ section .container {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
@@ -736,7 +736,7 @@ section .container {
 }
 
 .resume .resume-item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -787,7 +787,7 @@ section .container {
 
 .services .icon-box .icon::before {
   position: absolute;
-  content: '';
+  content: "";
   left: -8px;
   top: -8px;
   height: 100%;
@@ -888,7 +888,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap::before {
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   left: 30px;
@@ -927,7 +927,7 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
-  content: '';
+  content: "";
   width: 48px;
   height: 48px;
   position: absolute;
@@ -941,7 +941,7 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-info::after {
   display: block;
-  content: '';
+  content: "";
   width: 48px;
   height: 48px;
   position: absolute;
@@ -1120,7 +1120,7 @@ section .container {
 }
 
 .contact .php-email-form .loading:before {
-  content: '';
+  content: "";
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -1183,7 +1183,7 @@ section .container {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type='submit'] {
+.contact .php-email-form button[type="submit"] {
   background: #007ced;
   border: 0;
   padding: 10px 30px;
@@ -1193,7 +1193,7 @@ section .container {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type='submit']:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #006fd4;
 }
 
@@ -1326,6 +1326,12 @@ section .container {
   width: 60%;
 }
 
+@media (max-width: 992px) {
+  .modal_container .slider__container {
+    width: 100%;
+  }
+}
+
 .modal_container .slider__container .slides img {
   width: 100%;
   border-radius: 15px;
@@ -1368,6 +1374,13 @@ section .container {
   display: flex;
 }
 
+@media (max-width: 992px) {
+  .modal_container .right__container {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
 .modal_container .right__container .container {
   margin: 15px;
 }
@@ -1382,6 +1395,13 @@ section .container {
   font-size: 0.85vw;
 }
 
+@media (max-width: 992px) {
+  .modal_container .right__container .container .github_link,
+  .modal_container .right__container .container .live_site_link {
+    font-size: 3vw;
+  }
+}
+
 .modal_container .right__container .container .description {
   margin: 10px 0px;
 }
@@ -1389,6 +1409,12 @@ section .container {
 .modal_container .right__container .container .description li {
   font-size: 1vw;
   text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .modal_container .right__container .container .description li {
+    font-size: 3vw;
+  }
 }
 
 .modal_container .right__container .container .technology {
@@ -1414,6 +1440,13 @@ section .container {
   margin: 5px;
   background-color: #8b7c7c;
   border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .modal_container .right__container .container .technology .technology_used span {
+    font-size: 3vw;
+    margin: 1px;
+  }
 }
 
 .modal_container .close__button {
