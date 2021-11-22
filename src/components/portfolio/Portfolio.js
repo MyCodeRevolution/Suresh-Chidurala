@@ -1,18 +1,18 @@
-import React, {useState} from 'react';
-import portfolioData from '../../data/data.json';
-import Modal from './Modal';
+import React, { useState } from "react";
+import portfolioData from "../../data/data.json";
+import Modal from "./Modal";
 
 const portfolio_data = portfolioData[5].portfolio;
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModelData] = useState({
-    project_name: '',
-    github: '',
-    liveSite: '',
-    technologies: '',
-    description: '',
-    sliderImages: '',
+    project_name: "",
+    github: "",
+    liveSite: "",
+    technologies: "",
+    description: "",
+    sliderImages: "",
   });
   return (
     <div id="portfolio" className="portfolio">

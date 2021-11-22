@@ -991,6 +991,12 @@ section .container {
   color: #fff;
 }
 
+@media screen and (max-width: 650px) {
+  .portfolio .portfolio-wrap .portfolio-links button i {
+    font-size: 7vw;
+  }
+}
+
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
@@ -1315,6 +1321,14 @@ section .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* width */
+}
+
+@media screen and (max-width: 650px) {
+  .modal_container {
+    width: 100%;
+    top: 0%;
+  }
 }
 
 .modal_container .header_container {
@@ -1363,6 +1377,10 @@ section .container {
   right: 5%;
 }
 
+.modal_container ::-webkit-scrollbar {
+  width: 0px;
+}
+
 .modal_container .right__container {
   margin-right: 15px;
   border: 2px solid #8b7c7c;
@@ -1372,12 +1390,15 @@ section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 78vh;
+  overflow-y: scroll;
 }
 
 @media (max-width: 992px) {
   .modal_container .right__container {
     width: 100%;
     margin-right: 0px;
+    height: 50vh;
   }
 }
 
@@ -1414,6 +1435,9 @@ section .container {
 @media (max-width: 992px) {
   .modal_container .right__container .container .description li {
     font-size: 3vw;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
   }
 }
 
@@ -1537,7 +1561,7 @@ section .container {
 .header .icon h1 {
   position: absolute;
   top: 5px;
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 900;
   background-color: inherit;
 }
@@ -1557,7 +1581,7 @@ section .container {
 }
 
 .header .menu__bar li::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;

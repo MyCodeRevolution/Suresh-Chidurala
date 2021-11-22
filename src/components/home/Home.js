@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
   return (
@@ -12,14 +12,14 @@ const Home = () => {
           <p>
             I'm a passionate <b>Web Developer</b>
             <span className="text-slider-items">
-              <b style={{display: 'none'}}>
+              <b style={{ display: "none" }}>
                 Web Designing, UI Design, Photoshop, Photographer,Ms Office
               </b>
             </span>
             <strong className="text-slider"></strong>
           </p>
         </h2>
-        <nav className="nav-menu d-none d-lg-block">
+        {/* <nav className="nav-menu d-none d-lg-block">
           <ul>
             <li className="active">
               <a href="header">Home</a>
@@ -37,7 +37,7 @@ const Home = () => {
               <a href="contact">Contact</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <div className="social-links">
           <a
             href="https://twitter.com/ChiduralaSurya?s=08"
