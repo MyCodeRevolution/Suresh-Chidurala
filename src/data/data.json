@@ -157,7 +157,8 @@
           "In this application you can find all movies in the entire world. ",
           "U can see movie details and also you can watch trailer related to that movie.",
           "More over you can see total cast and crew details worked on that movie.",
-          "U can also see the celebrity details like movies he worked on and Personal information related to him."
+          "U can also see the celebrity details like movies he worked on and Personal information related to him.",
+          "This is a PWA application you can download on Desktop site and Mobile site as an APK file"
         ],
         "technologies": ["React", "Scss", "TMDB API"]
       },
@@ -219,6 +220,25 @@
           "JWT",
           "OAuth"
         ]
+      },
+      {
+        "img": "assets/img/portfolio/Front-end_tech.png",
+        "project_name": "Tutorial Site",
+        "title": "My Tutorial site",
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/front-end-development-technologies",
+        "liveSite": "https://front-end-web-technologies.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/tutorial_001-min.png",
+          "assets/img/portfolio/tutorial_002-min.png",
+          "assets/img/portfolio/tutorial_003-min.png"
+        ],
+        "description": [
+          "We can learn Front-end technologies like react, redux, sass",
+          "We can provide Back-end as well in the future update.",
+          "The goal of this application to build a whole full stack application for users to develop their skills "
+        ],
+        "technologies": ["React", "Scss"]
       },
       {
         "img": "assets/img/portfolio/book-store-app.png",
