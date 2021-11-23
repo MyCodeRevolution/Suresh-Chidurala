@@ -139,6 +139,29 @@
   {
     "portfolio": [
       {
+        "img": "assets/img/portfolio/logo.jpg",
+        "project_name": "Movie-Maza-project",
+        "title": "Movie-Maza-project",
+        "technology": "React.js",
+        "github": "https://github.com/Suresh17511/memories-project",
+        "liveSite": "https://my-memories-s.netlify.app",
+        "sliderImages": [
+          "assets/img/portfolio/Screenshot_001-min.png",
+          "assets/img/portfolio/Screenshot_002-min.png",
+          "assets/img/portfolio/Screenshot_003-min.png",
+          "assets/img/portfolio/Screenshot_005-min.png",
+          "assets/img/portfolio/Screenshot_006-min.png"
+        ],
+        "description": [
+          "Used TMDB api for this application.",
+          "In this application you can find all movies in the entire world. ",
+          "U can see movie details and also you can watch trailer related to that movie.",
+          "More over you can see total cast and crew details worked on that movie.",
+          "U can also see the celebrity details like movies he worked on and Personal information related to him."
+        ],
+        "technologies": ["React", "Scss", "TMDB API"]
+      },
+      {
         "img": "assets/img/portfolio/memories-project.png",
         "project_name": "memories-project",
         "title": "memories-project",

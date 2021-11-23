@@ -1,5 +1,5 @@
-import React from 'react';
-import skillsData from '../../data/data.json';
+import React from "react";
+import skillsData from "../../data/data.json";
 const skills_data = skillsData[0].skills;
 const interests_data = skillsData[1].interests;
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <div className="row">
           <div className="col-lg-3" data-aos="fade-right">
-            <img src="assets/img/surya.png" className="img-fluid" alt="" />
+            <img src="assets/img/surya.png" className="img-fluid" alt="Surya" />
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Web &amp; App Developer</h3>
@@ -81,13 +81,13 @@ const About = () => {
             {interests_data.map((interests) => (
               <div
                 className="col-lg-3 col-md-4"
-                style={{marginBottom: 25}}
+                style={{ marginBottom: 25 }}
                 key={interests.name}
               >
                 <div className="icon-box">
                   <i
                     className={`${interests.icon}`}
-                    style={{color: `${interests.color}`}}
+                    style={{ color: `${interests.color}` }}
                   ></i>
                   <h3>{interests.name}</h3>
                 </div>
